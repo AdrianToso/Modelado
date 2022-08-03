@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="7361d1f8-4dcb-464d-8b07-55469027ebdd" name="Monolito" linkedPackageId="27d61a62-215b-4f20-a146-5b48ca2f27b9" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="10122753-9e6e-43be-85a0-78a2a227290f">
+      <profileInstance Id="beb3d5c0-c9ba-4329-87e6-243135e71992" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="af314eab-79ef-4349-a77c-7de179d15266">
+      <profileInstance Id="1c8c7016-7a62-4a61-af42-a671e84febf9" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="04b81e32-23bf-4fab-a433-f7622fcbe457">
+      <profileInstance Id="6c634658-7605-4541-a335-f978220cf927" name="TextTemplateBindings">
+        <elementDefinition Id="d3f35757-2aed-488c-a230-2543bb94f1b6" />
+      </profileInstance>
+      <elementDefinition Id="1ca4c196-273a-4378-ab93-1f205b763659" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="60bf0928-237e-46a2-867e-6012e411196e" name="UI" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="86a3e1d0-63ff-496a-8953-d2498a22437a" />
+        <ownedAttributesInternal>
+          <part Id="d21503f6-3c6c-455d-9d57-e185cbc486d0" name="Capa de Negocio" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="7065151e-5849-41d5-8fdc-eb044a94e751" />
+            <type_NamedElement>
+              <componentMoniker Id="7ee0d13b-2648-430e-b91e-3fa8f4ed3a87" LastKnownName="Component2" />
+            </type_NamedElement>
+          </part>
+          <part Id="c100286f-f5be-4daa-bcea-85db07819aad" name="Data Base" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="5f79507c-9dd3-4352-b27f-01f3fe79d16d" />
+            <type_NamedElement>
+              <componentMoniker Id="33ca0d37-94ee-4308-bb25-16f3c9559d0f" LastKnownName="Component3" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="7ee0d13b-2648-430e-b91e-3fa8f4ed3a87" name="Component2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="76898685-5db8-47bd-a7d3-78022049fdc7" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="33ca0d37-94ee-4308-bb25-16f3c9559d0f" name="Component3" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5db45ebb-212e-43f0-bae2-1645f75520cf" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="27d61a62-215b-4f20-a146-5b48ca2f27b9" name="Mdelado">
+    <elementDefinition Id="241b612b-d563-423d-87e7-91af74150062" />
+  </package>
+</componentModel>

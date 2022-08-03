@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="89e0f47f-83ae-4584-8218-54899e10763a" name="Ejemplo Adapter" linkedPackageId="270571be-c89c-47c9-a9bd-0caa9febca4a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="a11b8e39-305d-4d8e-8057-944710be11e9">
+      <elementDefinition Id="af989c36-926a-44cf-adbe-552928643753" />
+      <body>Adapter
+</body>
+      <annotatedElements>
+        <classMoniker Id="aaf809d1-513b-4626-835d-e316ae1d08a9" LastKnownName="ElectricoAdapter" />
+      </annotatedElements>
+    </comment>
+    <comment Id="35e7c9d1-2259-48ce-a779-34b6c87922c8">
+      <elementDefinition Id="4267a25c-9cba-4495-891e-57cfd01f3479" />
+      <body>Adaptee
+</body>
+      <annotatedElements>
+        <classMoniker Id="ad306211-3b08-44c0-90ac-2f79a18a0b68" LastKnownName="MotorElectrico" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="05bf9bb0-f8cb-40b6-be8a-7da48b5200c2">
+      <profileInstance Id="35b675ce-3332-43a7-a98f-2f992fbbf210" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="63db63dd-766e-4d5b-afa5-287e16f24413">
+      <profileInstance Id="66585342-fabd-4328-bba7-a3260c683572" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="1d1617df-0954-4d60-bfdb-a51b4c43598f">
+      <profileInstance Id="701e6b97-c415-4011-9eca-a845a8f946c9" name="TextTemplateBindings">
+        <elementDefinition Id="d3f35757-2aed-488c-a230-2543bb94f1b6" />
+      </profileInstance>
+      <elementDefinition Id="1ca4c196-273a-4378-ab93-1f205b763659" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ae5ccb79-8afe-48fb-929c-105c0c7e9f23" name="Motor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c4eafa48-b640-4d8e-b4bf-ff533306ab53" />
+        <ownedOperationsInternal>
+          <operation Id="4e2de893-e522-4b0a-b9a6-a16eee3356bc" name="Acelerar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0a259e1d-4ce2-4964-9c67-e2a33956dedb" />
+          </operation>
+          <operation Id="24cc1879-f9d5-445d-b963-d2673aaa8e0f" name="Apagar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a212814e-a75e-4a82-8009-03547d561e8c" />
+          </operation>
+          <operation Id="8a0a2703-a1f3-4838-baa0-3cdec02bd367" name="Arrancar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="96e691ff-e031-4e01-9209-aa8496e430b0" />
+          </operation>
+          <operation Id="50b36e99-ee66-4c4f-8069-7260b7c88479" name="CargarCombustible" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c5ecb235-6975-4ac3-9858-9d25dc50f30c" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="729d2514-a9b9-4d63-bd0a-e8ce6db552c5" name="MotorNaftero" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2428a971-d198-40a2-86ed-a18f9cbc3f78" />
+        <generalsInternal>
+          <generalization Id="f86d1c23-751b-4996-9c70-b40c0cb94283" isSubstitutable="false">
+            <classMoniker Id="ae5ccb79-8afe-48fb-929c-105c0c7e9f23" LastKnownName="Motor" />
+            <elementDefinition Id="f3648784-cdb8-4d2b-ab2f-266aaaf4c54b" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="7f7226c5-e4af-404a-b415-bec234f90afa" name="Acelerar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0b924342-6ea8-4bf6-9e44-96d79a916d59" />
+          </operation>
+          <operation Id="adca9524-1197-49d5-af15-3a91193c8c79" name="Apagar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fda02209-122a-4151-b0ba-c26180e4212c" />
+          </operation>
+          <operation Id="86ab52fd-a44b-404e-8483-a93aa29f90e4" name="Arrancar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6a07488b-e443-4536-8cf4-92fe9ce146e0" />
+          </operation>
+          <operation Id="1afbe1d8-90c8-4468-9dca-748db4646413" name="CargarCombustible" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="11079ed5-a254-4ecd-8ee8-4509e1923242" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9bc7ca31-f3c7-4759-9b38-b98c00405d85" name="MotorDiesel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8c6b882d-c83f-44f8-8d8d-8abccf0aec79" />
+        <generalsInternal>
+          <generalization Id="e5a9715d-f53d-4672-90ed-180e988423e6" isSubstitutable="false">
+            <classMoniker Id="ae5ccb79-8afe-48fb-929c-105c0c7e9f23" LastKnownName="Motor" />
+            <elementDefinition Id="55b9b8fe-b146-4694-ba1a-0164fa7feff2" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="585bad23-d453-445d-b44d-1dd0163ed78f" name="Acelerar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="02cf30be-8de0-4530-b4d0-1a5f450c4be5" />
+          </operation>
+          <operation Id="e780a7b0-b238-4b4b-b8ca-caa96679ea92" name="Apagar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b89bd253-f996-4cfe-af08-a18318ac32d3" />
+          </operation>
+          <operation Id="b2bd5e7f-be11-481a-8fa2-b741d871b5ea" name="Arrancar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="858d3b59-88e4-4826-9a34-31c83284af34" />
+          </operation>
+          <operation Id="e31da384-617e-40ab-b12a-2eac4cd7f879" name="CargarCombustible" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ff4f70df-a706-48a9-a422-30f5481f56b1" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="aaf809d1-513b-4626-835d-e316ae1d08a9" name="ElectricoAdapter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e535ffc5-6eb2-49b4-926b-2562f911d064" />
+        <generalsInternal>
+          <generalization Id="0b1fec01-b65f-47e2-923c-cfb32d24c2c2" isSubstitutable="false">
+            <classMoniker Id="ae5ccb79-8afe-48fb-929c-105c0c7e9f23" LastKnownName="Motor" />
+            <elementDefinition Id="e3480144-5ef1-49ff-8b0f-77b1eef524df" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="30249e0f-6a5e-4502-ba4c-49b829d82293" isDerived="false" sourceEndRoleName="ElectricoAdapter" targetEndRoleName="MotorElectrico" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ad306211-3b08-44c0-90ac-2f79a18a0b68" LastKnownName="MotorElectrico" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="71a158c5-6f6b-46e0-8381-1ed08f98dd62" name="ElectricoAdapter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5a6314ed-3079-4db4-82e6-6ebfaf747834" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b7472885-7582-47b8-8ed2-0d9614b7fd79" name="MotorElectrico" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1e797560-bc4c-4a82-a9fc-6f48a5476ce5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="56039c01-38f2-4108-96eb-de7c483e417f" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="c0a44efa-2b2e-4ce7-9910-72051f588012" name="Acelerar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="70db0783-c421-4959-b2d1-683b65163548" />
+          </operation>
+          <operation Id="c471dace-820b-49dc-a551-35bf47c8e6d2" name="Apagar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9a956f93-c685-4c81-81d7-3a155dd10def" />
+          </operation>
+          <operation Id="2b325950-8458-48a1-9de0-c059715a056c" name="Arrancar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2f0a38f5-e09f-4e43-98d4-eb85df2c6219" />
+          </operation>
+          <operation Id="3b0c22f9-ac6b-4286-b4f1-b0e9df3603b9" name="CargarCombustible" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bd559032-8c98-4ef8-a296-7f65a4886362" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ad306211-3b08-44c0-90ac-2f79a18a0b68" name="MotorElectrico" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b6eb5be1-0315-4669-b5b3-b523fde41e5c" />
+        <ownedOperationsInternal>
+          <operation Id="47a44a1e-d638-45e0-be16-ef7d61d74d02" name="Activarr" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="10095588-531a-4fc9-afa2-dfedb5b99b14" />
+          </operation>
+          <operation Id="7bef4113-8ae9-4a84-a75f-463330bd81d2" name="Conectar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7881de93-5f1b-4446-a7d3-062af848c243" />
+          </operation>
+          <operation Id="3a9b6763-6885-4b3c-ae90-e4d75288337b" name="Desconectar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2b675932-d896-4311-8bf9-6933f4519dde" />
+          </operation>
+          <operation Id="fec0496f-5eae-4a58-8dd8-24327c359af6" name="Enchufar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="edd04191-68a0-4d0d-afad-49a540959230" />
+          </operation>
+          <operation Id="f1f55d72-c166-4fea-ae75-da770f307137" name="Mover" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dc9ff7da-e850-44f9-8625-1fb5994a2b8d" />
+          </operation>
+          <operation Id="e4fc9a03-c0e6-4414-8d95-13d76e484cb4" name="Parar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4411b6ce-9d63-4a27-bf1a-0a64fa3474bf" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="270571be-c89c-47c9-a9bd-0caa9febca4a" name="Mdelado">
+    <elementDefinition Id="241b612b-d563-423d-87e7-91af74150062" />
+  </package>
+</logicalClassDesignerModel>

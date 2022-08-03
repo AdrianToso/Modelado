@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="6b45f2fc-9946-403d-9bca-1ac1973a85ab" name="Decorator Ejemplo" linkedPackageId="6733fd87-14ae-43e8-9867-884b0e5aa752" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="825833bb-5f1a-4365-828f-ff2762dd6f8c">
+      <profileInstance Id="d1398303-f112-4b2a-94b2-07cfbad6beef" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="b3ffee06-46f4-4a13-beb1-1cf23213ade4">
+      <profileInstance Id="29247c5f-69c9-484c-a246-6cf1ee349c57" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="68b6af40-0529-4880-bf17-009409de308f">
+      <profileInstance Id="dcc43666-4931-442d-9903-5d5192e54bf8" name="TextTemplateBindings">
+        <elementDefinition Id="d3f35757-2aed-488c-a230-2543bb94f1b6" />
+      </profileInstance>
+      <elementDefinition Id="1ca4c196-273a-4378-ab93-1f205b763659" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="00e3b105-7320-44c5-a04e-0f07c5ae4449" name="BebidaComponet" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="54436c48-3676-492f-a501-8805feed1f00" />
+        <ownedOperationsInternal>
+          <operation Id="d6a64eee-cc92-404e-a06e-cbb578da4a4a" name="Costo" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1aa30dda-cf7d-43fe-b78c-0586688f3e09" />
+          </operation>
+          <operation Id="28dea644-e703-491b-859c-ffba61727357" name="Descripcion" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="353e8bee-779e-47ce-94a1-33a48d0e8733" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b1503e87-51eb-4dbf-a790-499131189c3f" name="CafeDescafeinado" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="653308a8-d6b9-4477-b71b-9b159f1cfd98" />
+        <generalsInternal>
+          <generalization Id="69c9865a-cb16-4d96-98d7-c3f5336f019f" isSubstitutable="false">
+            <classMoniker Id="00e3b105-7320-44c5-a04e-0f07c5ae4449" LastKnownName="BebidaComponet" />
+            <elementDefinition Id="6f4fcbbb-c21c-490c-8e1c-b5b8d6e6e1fd" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="3117da37-8bc0-4b87-b837-e76b6f8257a0" name="Costo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1c29971e-2059-474f-9428-172442b41687" />
+          </operation>
+          <operation Id="b0f79776-42de-4425-91e7-2e8a6c4daa08" name="Descripcion" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="78d98b21-82fa-4a3a-a093-0f11ae1b8e90" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a4a0604b-c1b2-47ac-8949-707ee9cae24d" name="CafeSolo" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="806b278a-8a32-4d96-88e7-96d732dcda77" />
+        <generalsInternal>
+          <generalization Id="5f6b2c33-9941-49f9-a744-8f7a9405012f" isSubstitutable="false">
+            <classMoniker Id="00e3b105-7320-44c5-a04e-0f07c5ae4449" LastKnownName="BebidaComponet" />
+            <elementDefinition Id="29c96ad4-612b-44dc-bfc5-c967e0968895" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="fd8e659c-723a-47db-902b-a386cc7c441c" name="Costo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="17e32a34-b942-4a27-b1ae-97e8480f9312" />
+          </operation>
+          <operation Id="f2e71abe-4de4-4765-b73c-94f88a5396bc" name="Descripcion" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8c6af0f5-9d63-4335-bf14-90eb5b9f0117" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="24811e16-c7a0-41e9-8b76-85fb0f1a41ab" name="TeComun" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0c9d5d27-0bc8-4089-8a0b-b82ac5ec0237" />
+        <generalsInternal>
+          <generalization Id="763026a7-3fc9-401b-b74a-867874ae545e" isSubstitutable="false">
+            <classMoniker Id="00e3b105-7320-44c5-a04e-0f07c5ae4449" LastKnownName="BebidaComponet" />
+            <elementDefinition Id="f51af411-47a6-46c9-83da-469a4db84407" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="42b56e73-c71a-4105-94fc-bcdd7c749776" name="Costo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1613d41c-cca5-431d-8f8e-0d5d885b75c1" />
+          </operation>
+          <operation Id="bf4aee37-b6ef-4a4c-8fa0-53f3bc088bbf" name="Descripcion" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1fc1fffb-5b31-44a8-b136-8dd5c35bfe6b" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2ac54748-1ae7-4309-8bf9-8803778aefe7" name="AgregadoDecorator" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b1349abd-4f77-4a14-aadf-415a5ceef759" />
+        <generalsInternal>
+          <generalization Id="c789ce83-4c67-480b-a99e-9d7fa7ca47d8" isSubstitutable="false">
+            <classMoniker Id="00e3b105-7320-44c5-a04e-0f07c5ae4449" LastKnownName="BebidaComponet" />
+            <elementDefinition Id="8d13a386-42a5-4f17-942b-31b4bdec5d70" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="ccd5fc7f-de8b-4cdf-9f15-45f6f77f05ba" isDerived="false" sourceEndRoleName="AgregadoDecorator" targetEndRoleName="BebidaComponet" isLeaf="false" isAbstract="false">
+            <classMoniker Id="00e3b105-7320-44c5-a04e-0f07c5ae4449" LastKnownName="BebidaComponet" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="252346fe-6528-46ab-9504-24e5e0b85695" name="AgregadoDecorator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a24ea28f-0889-4d08-b2ab-37a1af29bd1c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9b26a61b-d01f-443e-b5e9-dd311e757aaa" name="BebidaComponet" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4e145ccc-eddd-4e53-8add-4e49909cdfdb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b918f75f-0905-42e7-a078-13d6cbddb3b3" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5442ae7c-f7f6-46d8-810f-94f5bec131eb" name="CafeExpresso" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d421000e-af31-4544-b7d0-95a1afb2e6ba" />
+        <generalsInternal>
+          <generalization Id="a250fb0a-7e79-4c8b-9c8c-52c1a606452f" isSubstitutable="false">
+            <classMoniker Id="00e3b105-7320-44c5-a04e-0f07c5ae4449" LastKnownName="BebidaComponet" />
+            <elementDefinition Id="8e825243-10c4-4e70-a2c9-43147c3099a3" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="310a755b-7b02-444a-8e80-db240ec1928d" name="Costo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="11b3af60-2b3f-4435-8a7a-42665c4fd140" />
+          </operation>
+          <operation Id="cd7a1032-491b-46dd-adec-33390d456c3b" name="Descripcion" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9a6568de-5976-4904-8581-2b497c229fa7" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="25212f7e-23ad-4a18-9dd9-793a927d77f7" name="Azucar" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b8599bca-ac8b-4891-8f00-71f04a9193ea" />
+        <generalsInternal>
+          <generalization Id="54bbab1a-90c7-4ccb-85df-2339f4330f9f" isSubstitutable="false">
+            <classMoniker Id="2ac54748-1ae7-4309-8bf9-8803778aefe7" LastKnownName="AgregadoDecorator" />
+            <elementDefinition Id="4ee5a82a-a5eb-46c9-bf7c-9a3d92124097" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="deb06646-c82d-431c-ab62-f565df5eb9ed" name="Costo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d59b9329-4442-4bfa-9841-915fcbcf94aa" />
+          </operation>
+          <operation Id="1d410b3c-07fb-4910-9d14-7d29fc4012f9" name="Descripcion" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d3232795-9fe4-48cc-82d2-5f4d887b13a4" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="fb537712-523b-4c46-bb44-c247959d9496" name="Leche" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5d42a778-873d-4d5e-a725-3e971cebbe28" />
+        <generalsInternal>
+          <generalization Id="3d2fa485-e163-4b6f-ae5c-1f601d433f3e" isSubstitutable="false">
+            <classMoniker Id="2ac54748-1ae7-4309-8bf9-8803778aefe7" LastKnownName="AgregadoDecorator" />
+            <elementDefinition Id="3a24927c-8b33-4e08-9aaf-66eb7be70530" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="e66f152d-6d46-42f1-8a59-f2e9f39d3313" name="Costo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="38cb9411-5352-4f01-ab24-77d010842063" />
+          </operation>
+          <operation Id="23075da0-1666-46d6-a4db-c7dd24e4c2c4" name="Descripcion" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ed8318ff-ebbc-421d-8d9b-7812a6ec965f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3b6c283a-3436-4189-ba09-1a60983a3696" name="Crema" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e29fc23f-2857-4e30-9d36-73a4fffec860" />
+        <generalsInternal>
+          <generalization Id="4a337b5e-7370-4e17-9079-3a1ce634da1d" isSubstitutable="false">
+            <classMoniker Id="2ac54748-1ae7-4309-8bf9-8803778aefe7" LastKnownName="AgregadoDecorator" />
+            <elementDefinition Id="a0fd3292-a953-42d3-b0f1-4f222e1a58da" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="105d5761-cc67-4465-8c50-76e47ec64ebb" name="Costo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="01bf24f4-9f5b-4622-8f6e-0360a586415d" />
+          </operation>
+          <operation Id="33ddde72-f660-4c0c-93b5-b831056385b8" name="Descripcion" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="40fa641e-4668-4ed8-9504-2aa73ab1db34" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="99a4f15a-f8b5-491d-ace9-8671e7a166fe" name="Edulcorante" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9a158369-f9b7-43f7-bc48-6e24dfc238b5" />
+        <generalsInternal>
+          <generalization Id="18cb5213-3a10-4100-9f9e-ca8e05d96fd4" isSubstitutable="false">
+            <classMoniker Id="2ac54748-1ae7-4309-8bf9-8803778aefe7" LastKnownName="AgregadoDecorator" />
+            <elementDefinition Id="74371200-de10-4cc3-a203-672637586838" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="b52d29de-e818-4ec2-a3d2-3943c09e60e0" name="Costo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="04c2a453-e699-463d-9c67-cb9f8cefc890" />
+          </operation>
+          <operation Id="fe3d0310-26c9-4a7d-9e7b-02cdfde303e1" name="Descripcion" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="009a01a0-d884-46f6-9da8-8b1ff44f27db" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="6733fd87-14ae-43e8-9867-884b0e5aa752" name="Mdelado">
+    <elementDefinition Id="241b612b-d563-423d-87e7-91af74150062" />
+  </package>
+</logicalClassDesignerModel>

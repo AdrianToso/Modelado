@@ -22,9 +22,73 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="Monolito.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Monolito.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Monolito.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="patrones\Composite Ejemplo.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="patrones\Composite Ejemplo.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>patrones\Composite Ejemplo.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="patrones\Composite.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="patrones\Composite.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>patrones\Composite.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="patrones\Decorator Ejemplo.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="patrones\Decorator Ejemplo.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>patrones\Decorator Ejemplo.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="patrones\Decorator.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="patrones\Decorator.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>patrones\Decorator.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="patrones\Ejemplo Adapter.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="patrones\Ejemplo Adapter.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>patrones\Ejemplo Adapter.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="patrones\Patron Adapter.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="patrones\Patron Adapter.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>patrones\Patron Adapter.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="UMLComponentDiagram1.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLComponentDiagram1.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLComponentDiagram1.componentdiagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
+    <Content Include="Diagrama General.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Diagrama General.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Diagrama General.componentdiagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\Mdelado.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="patrones" />
   </ItemGroup>
 </Project>

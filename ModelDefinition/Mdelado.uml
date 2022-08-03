@@ -1,8 +1,72 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
   dslVersion="1.0.0.0"
   Id="241b612b-d563-423d-87e7-91af74150062"
   name="Mdelado" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="b5d6a86b-5a59-4ee2-9868-925658846a46">
+      <body>el cliente solo ve la interfaz </body>
+    </comment>
+    <comment
+      Id="3399a919-0c9b-4066-a944-597bf9701469">
+      <body>adaptado.SpecificRequest()</body>
+      <annotatedElements>
+        <classMoniker
+          Id="6eb4515d-3536-4f96-9b7e-51fc52de5d73"
+          LastKnownName="Adaptador"
+          LastKnownLocation="Mdelado.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="af989c36-926a-44cf-adbe-552928643753">
+      <body>Adapter
+</body>
+      <annotatedElements>
+        <classMoniker
+          Id="e535ffc5-6eb2-49b4-926b-2562f911d064"
+          LastKnownName="ElectricoAdapter"
+          LastKnownLocation="Mdelado.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="4267a25c-9cba-4495-891e-57cfd01f3479">
+      <body>Adaptee
+</body>
+      <annotatedElements>
+        <classMoniker
+          Id="b6eb5be1-0315-4669-b5b3-b523fde41e5c"
+          LastKnownName="MotorElectrico"
+          LastKnownLocation="Mdelado.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="f68c05e5-c3f5-4451-ae22-73b6becd86b6">
+      <body>foreach child in children 
+child.Operation()
+</body>
+      <annotatedElements>
+        <classMoniker
+          Id="f246c9cb-50ab-402e-8dfa-bd2eee611c04"
+          LastKnownName="Composite"
+          LastKnownLocation="Mdelado.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="2dc89c80-8f26-47b9-a94f-c99448735450">
+      <body>Ambas Clases sobreescriben "Imprimir"</body>
+      <annotatedElements>
+        <classMoniker
+          Id="e2baee59-d681-48aa-8477-7110024a09e4"
+          LastKnownName="MenuItem"
+          LastKnownLocation="Mdelado.uml" />
+        <classMoniker
+          Id="2a3a3eb0-605f-4df0-b4f3-ab99d53835e7"
+          LastKnownName="Menu"
+          LastKnownLocation="Mdelado.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -16,29 +80,2363 @@
         Id="532ea607-fb19-44b8-8502-3351b05452be"
         name="StandardProfileL3" />
     </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="1ca4c196-273a-4378-ab93-1f205b763659">
+      <profileInstance
+        Id="d3f35757-2aed-488c-a230-2543bb94f1b6"
+        name="TextTemplateBindings" />
+    </packageHasProfileInstances>
   </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <component
+        Id="52b09901-6cfb-4c99-ade1-52d4d9ded153"
+        name="Component1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="b7bfb97a-cc1e-4cad-bed8-c754c9c8fa8c"
+        name="Blazor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="622be503-4e68-49f7-95ba-876855bb11e3"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="312a0c30-dc4b-4069-8199-c96aa25f739c">
+                <providedInterfaceMoniker
+                  Id="d773ae1f-63c0-4744-affd-576bc42655aa"
+                  LastKnownName="Port2"
+                  LastKnownLocation="Mdelado.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="73dc9395-3798-4086-8354-97baabe235c1"
+                LastKnownLocation="Mdelado.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="0eb91b91-6b62-4513-a6af-d4c1fae287c3"
+        name="Servicio MVC .NET Core"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="cacf13cf-a211-477b-91c4-b935aacd6633"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="d34d304e-c943-4f89-9cc3-0314785e1fbb">
+                <providedInterfaceMoniker
+                  Id="ae567066-dc1c-45d2-962f-849fa4da8f29"
+                  LastKnownName="Port1"
+                  LastKnownLocation="Mdelado.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="23d776a1-0498-4dfb-94fe-ebaa8307ccbf"
+                LastKnownLocation="Mdelado.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <providedInterface
+            Id="d773ae1f-63c0-4744-affd-576bc42655aa"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="e3df86a4-4ba1-412f-bbe6-68640727ac47"
+                LastKnownLocation="Mdelado.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="dc3abc12-35fa-4869-8767-8e6fcfe7ee54"
+        name="DB SqlServer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="ae567066-dc1c-45d2-962f-849fa4da8f29"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="c0f2607f-cd00-4616-ad68-c2c50eadc5ac"
+                LastKnownLocation="Mdelado.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="23d776a1-0498-4dfb-94fe-ebaa8307ccbf"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="c0f2607f-cd00-4616-ad68-c2c50eadc5ac"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="e3df86a4-4ba1-412f-bbe6-68640727ac47"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="73dc9395-3798-4086-8354-97baabe235c1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="268e726d-0b03-45c5-85dc-d5c1d0c3574a"
+        name="Dominio- Entities"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="fc92572e-7234-4ca9-a0dc-4f412308e697">
+            <componentMoniker
+              Id="2624b7f2-b5d8-4af7-b587-1672eeb71e09"
+              LastKnownName="Abstrations"
+              LastKnownLocation="Mdelado.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="d0816985-eca7-4dae-a237-2a9330635ac5"
+        name="Repository"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="1aa5665a-7115-4f16-bfd7-f8c6b47b0652">
+            <componentMoniker
+              Id="fc8f5a17-f250-4ef0-8885-e69160daeb0d"
+              LastKnownName="DataAccess Contextos de Bases de datos"
+              LastKnownLocation="Mdelado.uml" />
+          </dependency>
+          <dependency
+            Id="1ecbeae2-305d-460d-8da8-933935c9f94e">
+            <componentMoniker
+              Id="268e726d-0b03-45c5-85dc-d5c1d0c3574a"
+              LastKnownName="Dominio- Entities"
+              LastKnownLocation="Mdelado.uml" />
+          </dependency>
+          <dependency
+            Id="a63db551-b796-469b-bffd-34de02a12c9e">
+            <componentMoniker
+              Id="2a0ca4f7-674c-4619-8559-965f7456794d"
+              LastKnownName="Services"
+              LastKnownLocation="Mdelado.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="e7ed199d-8b9b-4bf9-9221-6a3c3939942e"
+        name="Application"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="e07b3458-5b49-47f7-be97-e11d6f0b8409">
+            <componentMoniker
+              Id="d0816985-eca7-4dae-a237-2a9330635ac5"
+              LastKnownName="Repository"
+              LastKnownLocation="Mdelado.uml" />
+          </dependency>
+          <dependency
+            Id="a10d54c0-84fd-40e4-8cc3-e156b5545e0d">
+            <componentMoniker
+              Id="268e726d-0b03-45c5-85dc-d5c1d0c3574a"
+              LastKnownName="Dominio- Entities"
+              LastKnownLocation="Mdelado.uml" />
+          </dependency>
+          <dependency
+            Id="f58e233a-fe1e-4cbc-a534-0be37316adcb">
+            <componentMoniker
+              Id="2a0ca4f7-674c-4619-8559-965f7456794d"
+              LastKnownName="Services"
+              LastKnownLocation="Mdelado.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="fc8f5a17-f250-4ef0-8885-e69160daeb0d"
+        name="DataAccess Contextos de Bases de datos"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="9d8f1b7f-505b-40be-866d-6e16f6d99e4e">
+            <componentMoniker
+              Id="268e726d-0b03-45c5-85dc-d5c1d0c3574a"
+              LastKnownName="Dominio- Entities"
+              LastKnownLocation="Mdelado.uml" />
+          </dependency>
+          <dependency
+            Id="3be1b30b-fcd8-4017-9a74-c35cc46b13d9">
+            <componentMoniker
+              Id="2a0ca4f7-674c-4619-8559-965f7456794d"
+              LastKnownName="Services"
+              LastKnownLocation="Mdelado.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="7a74fa1b-2953-4970-8943-c7657da01e5e"
+        name="Component6"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2a0ca4f7-674c-4619-8559-965f7456794d"
+        name="Services"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="e52c7486-97b8-4a2b-9977-58dda5d0a7b5">
+            <componentMoniker
+              Id="2624b7f2-b5d8-4af7-b587-1672eeb71e09"
+              LastKnownName="Abstrations"
+              LastKnownLocation="Mdelado.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2624b7f2-b5d8-4af7-b587-1672eeb71e09"
+        name="Abstrations"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="8ccc6b2f-ceb1-4973-8aa1-1ead53f90279"
+        name="Interfaz de usuario UI"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="bc2a218f-4810-4dac-bbf5-b2db544aab1e">
+            <componentMoniker
+              Id="e7ed199d-8b9b-4bf9-9221-6a3c3939942e"
+              LastKnownName="Application"
+              LastKnownLocation="Mdelado.uml" />
+          </dependency>
+          <dependency
+            Id="3393a323-258f-46ce-a8b9-4840f5bd3b88">
+            <componentMoniker
+              Id="268e726d-0b03-45c5-85dc-d5c1d0c3574a"
+              LastKnownName="Dominio- Entities"
+              LastKnownLocation="Mdelado.uml" />
+          </dependency>
+          <dependency
+            Id="6572fc02-2cb6-440d-8720-429035424226">
+            <componentMoniker
+              Id="2a0ca4f7-674c-4619-8559-965f7456794d"
+              LastKnownName="Services"
+              LastKnownLocation="Mdelado.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="86a3e1d0-63ff-496a-8953-d2498a22437a"
+        name="UI"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <part
+            Id="7065151e-5849-41d5-8fdc-eb044a94e751"
+            name="Capa de Negocio"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="76898685-5db8-47bd-a7d3-78022049fdc7"
+                LastKnownName="Component2"
+                LastKnownLocation="Mdelado.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="5f79507c-9dd3-4352-b27f-01f3fe79d16d"
+            name="Data Base"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="5db45ebb-212e-43f0-bae2-1645f75520cf"
+                LastKnownName="Component3"
+                LastKnownLocation="Mdelado.uml" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="76898685-5db8-47bd-a7d3-78022049fdc7"
+        name="Component2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="5db45ebb-212e-43f0-bae2-1645f75520cf"
+        name="Component3"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="62679275-fd4d-42de-ac83-e185d8d4e8d9"
+        name="Cliente"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="752914c7-9ded-41de-a681-99717175de7c">
+            <interfaceMoniker
+              Id="31ee3be7-cff6-4e5f-9b64-c9f49478fa0c"
+              LastKnownName="Target"
+              LastKnownLocation="Mdelado.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="213e3565-949a-40e1-83e4-91a905963ce3"
+            name="Request"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="06dc46cd-23d0-4f67-9544-d187d6f7f25c"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="31ee3be7-cff6-4e5f-9b64-c9f49478fa0c"
+        name="Target"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="896a29b7-0904-4bdd-b9bc-2741f615165f"
+            name="Request"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9b1b636f-4cb8-41e0-98b4-b2b6f7453297"
+        name="Adapter"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="78e8a575-d159-4adb-9dba-b286b530b59c">
+            <interfaceMoniker
+              Id="31ee3be7-cff6-4e5f-9b64-c9f49478fa0c"
+              LastKnownName="Target"
+              LastKnownLocation="Mdelado.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="13c11ce9-e5ba-4abf-b061-44fd86f7d3be"
+            isSubstitutable="false">
+            <classMoniker
+              Id="d80d1ef4-939f-4288-804c-64e86046c143"
+              LastKnownName="Adaptee"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="50828cfc-0620-4cde-afbe-7655c0c3cd74"
+            name="Request"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="91f6c697-25de-443c-967b-dfe092f870f1"
+            name="Specific Request"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d80d1ef4-939f-4288-804c-64e86046c143"
+        name="Adaptee"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="73511af7-731c-4d20-8c08-3761f35df847"
+            name="Specific Request"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bee07fdf-5e0c-4bbc-918c-791b7f125a24"
+        name="Cliente"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="1e0be569-4f1f-467e-aa7b-6be371804435">
+            <interfaceMoniker
+              Id="15825d05-4bf5-40fa-817b-2ed62c242725"
+              LastKnownName="Target"
+              LastKnownLocation="Mdelado.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="53aaf738-6cfa-4afd-9f61-0ff76672310e"
+            name="Request"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f88f8a7e-65a7-4304-bc2f-97578bd39515"
+        name="Class2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="15825d05-4bf5-40fa-817b-2ed62c242725"
+        name="Target"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="ca7e91ea-0b12-4338-98fa-4f2aa9e98608"
+            name="Request"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6eb4515d-3536-4f96-9b7e-51fc52de5d73"
+        name="Adaptador"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="70397f95-499c-4f03-8633-aba3ab46db5b">
+            <interfaceMoniker
+              Id="15825d05-4bf5-40fa-817b-2ed62c242725"
+              LastKnownName="Target"
+              LastKnownLocation="Mdelado.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="e11de83b-be18-4c77-81fc-4f77b2f3e9cf"
+            isDerived="false"
+            sourceEndRoleName="Adaptador"
+            targetEndRoleName="Adaptado"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d8098061-513d-4bf2-823b-14934ff0728a"
+              LastKnownName="Adaptado"
+              LastKnownLocation="Mdelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="98f0787b-8b1d-49d1-b73e-079021f97393"
+                  name="Adaptador"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1e271774-e750-4b91-a780-22a8164d99fb"
+                  name="Adaptado"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="9cbd8ec0-2dd1-4903-bc82-899d52125f33"
+            name="Request"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d8098061-513d-4bf2-823b-14934ff0728a"
+        name="Adaptado"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="d718e56d-d269-40a6-b4f1-d5b47e32e091"
+            name="Specific Request"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c4eafa48-b640-4d8e-b4bf-ff533306ab53"
+        name="Motor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="0a259e1d-4ce2-4964-9c67-e2a33956dedb"
+            name="Acelerar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a212814e-a75e-4a82-8009-03547d561e8c"
+            name="Apagar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="96e691ff-e031-4e01-9209-aa8496e430b0"
+            name="Arrancar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c5ecb235-6975-4ac3-9858-9d25dc50f30c"
+            name="CargarCombustible"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2428a971-d198-40a2-86ed-a18f9cbc3f78"
+        name="MotorNaftero"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="f3648784-cdb8-4d2b-ab2f-266aaaf4c54b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c4eafa48-b640-4d8e-b4bf-ff533306ab53"
+              LastKnownName="Motor"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0b924342-6ea8-4bf6-9e44-96d79a916d59"
+            name="Acelerar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="fda02209-122a-4151-b0ba-c26180e4212c"
+            name="Apagar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6a07488b-e443-4536-8cf4-92fe9ce146e0"
+            name="Arrancar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="11079ed5-a254-4ecd-8ee8-4509e1923242"
+            name="CargarCombustible"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8c6b882d-c83f-44f8-8d8d-8abccf0aec79"
+        name="MotorDiesel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="55b9b8fe-b146-4694-ba1a-0164fa7feff2"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c4eafa48-b640-4d8e-b4bf-ff533306ab53"
+              LastKnownName="Motor"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="02cf30be-8de0-4530-b4d0-1a5f450c4be5"
+            name="Acelerar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b89bd253-f996-4cfe-af08-a18318ac32d3"
+            name="Apagar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="858d3b59-88e4-4826-9a34-31c83284af34"
+            name="Arrancar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ff4f70df-a706-48a9-a422-30f5481f56b1"
+            name="CargarCombustible"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e535ffc5-6eb2-49b4-926b-2562f911d064"
+        name="ElectricoAdapter"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="e3480144-5ef1-49ff-8b0f-77b1eef524df"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c4eafa48-b640-4d8e-b4bf-ff533306ab53"
+              LastKnownName="Motor"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="56039c01-38f2-4108-96eb-de7c483e417f"
+            isDerived="false"
+            sourceEndRoleName="ElectricoAdapter"
+            targetEndRoleName="MotorElectrico"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b6eb5be1-0315-4669-b5b3-b523fde41e5c"
+              LastKnownName="MotorElectrico"
+              LastKnownLocation="Mdelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5a6314ed-3079-4db4-82e6-6ebfaf747834"
+                  name="ElectricoAdapter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1e797560-bc4c-4a82-a9fc-6f48a5476ce5"
+                  name="MotorElectrico"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="70db0783-c421-4959-b2d1-683b65163548"
+            name="Acelerar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9a956f93-c685-4c81-81d7-3a155dd10def"
+            name="Apagar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2f0a38f5-e09f-4e43-98d4-eb85df2c6219"
+            name="Arrancar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="bd559032-8c98-4ef8-a296-7f65a4886362"
+            name="CargarCombustible"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="9e8861b2-db22-4a95-abe2-d925a5f2a9db"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b6eb5be1-0315-4669-b5b3-b523fde41e5c"
+        name="MotorElectrico"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="10095588-531a-4fc9-afa2-dfedb5b99b14"
+            name="Activarr"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7881de93-5f1b-4446-a7d3-062af848c243"
+            name="Conectar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2b675932-d896-4311-8bf9-6933f4519dde"
+            name="Desconectar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="edd04191-68a0-4d0d-afad-49a540959230"
+            name="Enchufar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="dc9ff7da-e850-44f9-8625-1fb5994a2b8d"
+            name="Mover"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4411b6ce-9d63-4a27-bf1a-0a64fa3474bf"
+            name="Parar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="af1dcce7-3f18-4e3e-a324-3d0df6f87438"
+        name="Component"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="c05e631d-df95-4c10-8ea1-d55e0c0c5845"
+            name="MethodA"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="002f07c0-9648-45a4-a00b-073143aee8ac"
+            name="MethodB"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="19ada9f7-7b02-45e3-b5af-885618ff3beb"
+        name="ConcreteComponent"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="0ddba6c7-5d20-4b5b-8687-5fa7e588e767"
+            isSubstitutable="false">
+            <classMoniker
+              Id="af1dcce7-3f18-4e3e-a324-3d0df6f87438"
+              LastKnownName="Component"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="5602ff2d-cfe9-4b9d-ac89-0c0820028263"
+            name="MethodA"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ddd932c5-b236-414a-a528-8db51e44239c"
+            name="MethodB"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3d101891-0f25-466b-8174-93d7babe67ba"
+        name="Decorator"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="999c1150-f3e0-4bc6-8bbc-0092017e5adc"
+            isSubstitutable="false">
+            <classMoniker
+              Id="af1dcce7-3f18-4e3e-a324-3d0df6f87438"
+              LastKnownName="Component"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="b95613a1-379b-4705-92e6-a909dab75145"
+            isDerived="false"
+            sourceEndRoleName="Decorator"
+            targetEndRoleName="Component"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="af1dcce7-3f18-4e3e-a324-3d0df6f87438"
+              LastKnownName="Component"
+              LastKnownLocation="Mdelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="18020a9b-31c4-4fb8-91ac-a922466a31fa"
+                  name="Decorator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="241526d3-ae72-4963-ae32-06331b536aa3"
+                  name="Component"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="04ec41d6-0851-449c-95fb-eba0acec5e5a"
+        name="ConcreteDecoratorA"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="bea860c0-b54c-4e45-a23c-24140274ca7c"
+            isSubstitutable="false">
+            <classMoniker
+              Id="3d101891-0f25-466b-8174-93d7babe67ba"
+              LastKnownName="Decorator"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="92e68c5e-df34-45d2-a149-0ff5190eb8d9"
+        name="ConcreteDecoratorB"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="56688a48-0fe1-47a2-b37f-d727ea0052db"
+            isSubstitutable="false">
+            <classMoniker
+              Id="3d101891-0f25-466b-8174-93d7babe67ba"
+              LastKnownName="Decorator"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="54436c48-3676-492f-a501-8805feed1f00"
+        name="BebidaComponet"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="1aa30dda-cf7d-43fe-b78c-0586688f3e09"
+            name="Costo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="353e8bee-779e-47ce-94a1-33a48d0e8733"
+            name="Descripcion"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="653308a8-d6b9-4477-b71b-9b159f1cfd98"
+        name="CafeDescafeinado"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="6f4fcbbb-c21c-490c-8e1c-b5b8d6e6e1fd"
+            isSubstitutable="false">
+            <classMoniker
+              Id="54436c48-3676-492f-a501-8805feed1f00"
+              LastKnownName="BebidaComponet"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="1c29971e-2059-474f-9428-172442b41687"
+            name="Costo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="78d98b21-82fa-4a3a-a093-0f11ae1b8e90"
+            name="Descripcion"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="806b278a-8a32-4d96-88e7-96d732dcda77"
+        name="CafeSolo"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="29c96ad4-612b-44dc-bfc5-c967e0968895"
+            isSubstitutable="false">
+            <classMoniker
+              Id="54436c48-3676-492f-a501-8805feed1f00"
+              LastKnownName="BebidaComponet"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="17e32a34-b942-4a27-b1ae-97e8480f9312"
+            name="Costo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8c6af0f5-9d63-4335-bf14-90eb5b9f0117"
+            name="Descripcion"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0c9d5d27-0bc8-4089-8a0b-b82ac5ec0237"
+        name="TeComun"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="f51af411-47a6-46c9-83da-469a4db84407"
+            isSubstitutable="false">
+            <classMoniker
+              Id="54436c48-3676-492f-a501-8805feed1f00"
+              LastKnownName="BebidaComponet"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="1613d41c-cca5-431d-8f8e-0d5d885b75c1"
+            name="Costo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1fc1fffb-5b31-44a8-b136-8dd5c35bfe6b"
+            name="Descripcion"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b1349abd-4f77-4a14-aadf-415a5ceef759"
+        name="AgregadoDecorator"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="8d13a386-42a5-4f17-942b-31b4bdec5d70"
+            isSubstitutable="false">
+            <classMoniker
+              Id="54436c48-3676-492f-a501-8805feed1f00"
+              LastKnownName="BebidaComponet"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="b918f75f-0905-42e7-a078-13d6cbddb3b3"
+            isDerived="false"
+            sourceEndRoleName="AgregadoDecorator"
+            targetEndRoleName="BebidaComponet"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="54436c48-3676-492f-a501-8805feed1f00"
+              LastKnownName="BebidaComponet"
+              LastKnownLocation="Mdelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a24ea28f-0889-4d08-b2ab-37a1af29bd1c"
+                  name="AgregadoDecorator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4e145ccc-eddd-4e53-8add-4e49909cdfdb"
+                  name="BebidaComponet"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d421000e-af31-4544-b7d0-95a1afb2e6ba"
+        name="CafeExpresso"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="8e825243-10c4-4e70-a2c9-43147c3099a3"
+            isSubstitutable="false">
+            <classMoniker
+              Id="54436c48-3676-492f-a501-8805feed1f00"
+              LastKnownName="BebidaComponet"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="11b3af60-2b3f-4435-8a7a-42665c4fd140"
+            name="Costo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9a6568de-5976-4904-8581-2b497c229fa7"
+            name="Descripcion"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b8599bca-ac8b-4891-8f00-71f04a9193ea"
+        name="Azucar"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="4ee5a82a-a5eb-46c9-bf7c-9a3d92124097"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b1349abd-4f77-4a14-aadf-415a5ceef759"
+              LastKnownName="AgregadoDecorator"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d59b9329-4442-4bfa-9841-915fcbcf94aa"
+            name="Costo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d3232795-9fe4-48cc-82d2-5f4d887b13a4"
+            name="Descripcion"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5d42a778-873d-4d5e-a725-3e971cebbe28"
+        name="Leche"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="3a24927c-8b33-4e08-9aaf-66eb7be70530"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b1349abd-4f77-4a14-aadf-415a5ceef759"
+              LastKnownName="AgregadoDecorator"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="38cb9411-5352-4f01-ab24-77d010842063"
+            name="Costo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ed8318ff-ebbc-421d-8d9b-7812a6ec965f"
+            name="Descripcion"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e29fc23f-2857-4e30-9d36-73a4fffec860"
+        name="Crema"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="a0fd3292-a953-42d3-b0f1-4f222e1a58da"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b1349abd-4f77-4a14-aadf-415a5ceef759"
+              LastKnownName="AgregadoDecorator"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="01bf24f4-9f5b-4622-8f6e-0360a586415d"
+            name="Costo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="40fa641e-4668-4ed8-9504-2aa73ab1db34"
+            name="Descripcion"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9a158369-f9b7-43f7-bc48-6e24dfc238b5"
+        name="Edulcorante"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="74371200-de10-4cc3-a203-672637586838"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b1349abd-4f77-4a14-aadf-415a5ceef759"
+              LastKnownName="AgregadoDecorator"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="04c2a453-e699-463d-9c67-cb9f8cefc890"
+            name="Costo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="009a01a0-d884-46f6-9da8-8b1ff44f27db"
+            name="Descripcion"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="833d0835-9a2c-454c-8cee-1c508431eb10"
+        name="Component"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="1e7e03cc-bbc0-4bd4-a38a-0ee70744d45b"
+            name="Add"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5b2efa01-2680-41b8-ae37-9f976f4d580d"
+                  name="Component()"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5540b52d-73bb-45d0-add1-6d67a8ceed22"
+            name="Remove"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bf7a91fc-c496-4157-b67b-fe63bf075640"
+                  name="Component()"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="34266821-74d7-4ae7-a430-1e6544e198b3"
+            name="GetChild"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="11646b57-d231-498f-9a58-8d13e15e97cf"
+                  name="Index"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ae042a53-76ad-4e1d-b18b-f7304d824077"
+                      LastKnownName="int"
+                      LastKnownLocation="Mdelado.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6d1112a3-17ff-41fb-b875-3cf633371a9c"
+        name="Cliente"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="ae042a53-76ad-4e1d-b18b-f7304d824077"
+        name="int" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7c78ade4-6252-4bb3-8598-8edd350f7817"
+        name="Leaf"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="58ba4e09-a8ee-4f5b-9d90-18ced704dfb6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="833d0835-9a2c-454c-8cee-1c508431eb10"
+              LastKnownName="Component"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c466c119-33de-44ee-b760-be2902c138e6"
+            name="Operation"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f246c9cb-50ab-402e-8dfa-bd2eee611c04"
+        name="Composite"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="2d5dc8e4-db4c-4a50-84fa-125f2759ea58"
+            isSubstitutable="false">
+            <classMoniker
+              Id="833d0835-9a2c-454c-8cee-1c508431eb10"
+              LastKnownName="Component"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="77e6c4c9-1da1-4212-96e7-a20868dfd02c"
+            isDerived="false"
+            sourceEndRoleName="Composite"
+            targetEndRoleName="Component"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="833d0835-9a2c-454c-8cee-1c508431eb10"
+              LastKnownName="Component"
+              LastKnownLocation="Mdelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="86da78f2-652e-4c6b-9905-800223608cce"
+                  name="Composite"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="523036cd-584b-46d3-8471-d19c3b0b7fc3"
+                  name="Component"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="082dcf6d-dd13-4d0d-9253-87b5c95a9836"
+        name="MenuComponent"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="6d34ceab-4bc8-4b45-aba3-a15ba939484d"
+            name="Descripcion string"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c909dc9f-435f-41b4-a0c2-526f4dc0a5c3"
+            name="Nombre string"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7094ced8-b5c7-422b-81d0-8622b2eb3e59"
+            name="Precio string"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="4e5f4205-b834-48dc-9e08-65a8f94e1c15"
+            name="AddChildren"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7b6191c2-b696-42bc-852e-114a622c7f7d"
+            name="&lt;&lt;Property&gt;&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="dfe39edf-c33f-482a-8ee1-979a8c328323"
+            name="RemoveChildren"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="85a742c9-954e-40d8-a46c-a0a8b1f48516"
+            name="&lt;Property&gt; Descripcion"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="049d2c4e-5bea-4441-a303-124dfc4b9458"
+            name="&lt;Property&gt; Imprimir"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="27f6c2d2-0ef2-447d-b030-d33d98813979"
+            name="&lt;Property&gt; Nombre"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8b77c3a3-6cba-464c-a84e-0f420ee2ff5f"
+            name="&lt;Property&gt;Precio"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e2baee59-d681-48aa-8477-7110024a09e4"
+        name="MenuItem"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="a63c1457-93af-4d70-9e5e-f40f4fb3b2be"
+            isSubstitutable="false">
+            <classMoniker
+              Id="082dcf6d-dd13-4d0d-9253-87b5c95a9836"
+              LastKnownName="MenuComponent"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="09ce1d9e-4272-4683-940e-9b78f2cd7b5a"
+            name="&lt;&lt;Property&gt;&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3c5ab471-98bc-495b-b49b-5e8248952e70"
+            name="&lt;Property&gt; Descripcion"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7544d294-e88c-4a93-b3eb-c55251a9fd13"
+            name="&lt;Property&gt; Imprimir"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="59bf2c72-c7be-4fea-8a05-8b9b79d8f222"
+            name="&lt;Property&gt; Nombre"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="980f1de0-7ce5-4d80-829c-0b6cdc23695d"
+            name="&lt;Property&gt;Precio"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2a3a3eb0-605f-4df0-b4f3-ab99d53835e7"
+        name="Menu"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="04539b08-c989-4032-ac55-cf4443f1804d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="082dcf6d-dd13-4d0d-9253-87b5c95a9836"
+              LastKnownName="MenuComponent"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="f877db00-d020-4db6-a251-c1c8d284b738"
+            isDerived="false"
+            sourceEndRoleName="Menu"
+            targetEndRoleName="MenuComponent"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="082dcf6d-dd13-4d0d-9253-87b5c95a9836"
+              LastKnownName="MenuComponent"
+              LastKnownLocation="Mdelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="411fa73a-1097-4b9a-bd59-c03ddb933e60"
+                  name="Menu"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aae5b75d-cfa2-4684-9786-0eef48153246"
+                  name="MenuComponent"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="330ada23-46a8-4983-8ec0-5ccc8dc1d4b2"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="182f8160-03e3-4c16-8832-9c01f5a3edd8"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="14930625-bc32-4e0b-bc3e-453d30ea7bc8"
+            name="&lt;&lt;Property&gt;&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="acfdfd8e-b39c-43fa-a4b5-0afc947a23ed"
+            name="&lt;Property&gt; Descripcion"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4df9c2ad-7889-4e89-b280-4986f8f0cd76"
+            name="&lt;Property&gt; Imprimir"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="856191fe-9c9c-4d6d-be3a-170ae28891d8"
+            name="&lt;Property&gt; Nombre"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ede281be-fd83-464d-8bc2-f85f81b9e3c7"
+            name="&lt;Property&gt;Precio"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3df74621-1a54-4a7d-8a82-3f1d092517d2"
+            name="AddChildren"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="380f52d0-00ea-4a1e-aea3-e70c23e47f0f"
+            name="RemoveChildren"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1e9080fb-0840-470d-9e8a-bbc60c74449f"
+        name="Componente"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="4cc1b24b-569a-49f8-9917-7616b5efcff3"
+            name="Nombre string"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a4e421ef-a110-409f-86dc-bbd60021687f"
+            name="AgregarHijo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a2f1830a-c464-468a-b993-d52e9465b527"
+                  name="Componente"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8956f1f8-ffda-4ffa-bda7-c09cedf2a42e"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ae042a53-76ad-4e1d-b18b-f7304d824077"
+                      LastKnownName="int"
+                      LastKnownLocation="Mdelado.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7e5c2a29-4104-41aa-ad2d-eddea16bdd84"
+            name="ObtenerHijos"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="814324e5-3bf8-42c2-a4ac-4d5583c7ebe1"
+                  name=") IList&lt;Componente&gt;("
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b3502b79-5b79-4135-960e-4989524f97bc"
+            name="ObtenerTamaño"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ca3914f1-8277-4dcc-8d9a-5720f8b51211"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ae042a53-76ad-4e1d-b18b-f7304d824077"
+                      LastKnownName="int"
+                      LastKnownLocation="Mdelado.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="61da2fb7-0ace-4f1d-9999-21b8145ab68c"
+        name="Archivo"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="03ccb3a9-dbd0-44fd-b230-058f06a5ca4e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1e9080fb-0840-470d-9e8a-bbc60c74449f"
+              LastKnownName="Componente"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="5b5e0848-5d3d-47a1-954f-402c25e35861"
+            name="Tamaño"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ae042a53-76ad-4e1d-b18b-f7304d824077"
+                LastKnownName="int"
+                LastKnownLocation="Mdelado.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="85fe3c59-e8d9-4f1e-9734-6c1c4cff777f"
+            name="AgregarHijo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="076a92c3-f4bd-4bea-940a-b749a9be9b83"
+                  name="Componente"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="70529d9c-b97c-418f-b1aa-408cba52a80d"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ae042a53-76ad-4e1d-b18b-f7304d824077"
+                      LastKnownName="int"
+                      LastKnownLocation="Mdelado.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e95c507d-ae49-499f-8d7f-3dd9ef569074"
+            name="ObtenerHijos"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="98ecf6f0-7e79-4d3c-9991-d3a459fdf10d"
+                  name=") IList&lt;Componente&gt;("
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="87c303f6-f9c6-4f2b-a1b0-72d188acbdb4"
+            name="ObtenerTamaño"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="09acadea-0462-4ac8-b408-bbd26cf9b0bd"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ae042a53-76ad-4e1d-b18b-f7304d824077"
+                      LastKnownName="int"
+                      LastKnownLocation="Mdelado.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e257a0b1-6444-4f33-82d3-dd48337e09ca"
+        name="Directorio"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="8b3029ef-5a69-4101-9dcd-93d28877c3e9"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1e9080fb-0840-470d-9e8a-bbc60c74449f"
+              LastKnownName="Componente"
+              LastKnownLocation="Mdelado.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="b8775274-d8c5-4a5f-a4ce-28c06201e81e"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Componente"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1e9080fb-0840-470d-9e8a-bbc60c74449f"
+              LastKnownName="Componente"
+              LastKnownLocation="Mdelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="254a19fa-3f14-48f2-9407-5208d3baad3d"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="65083365-85e7-4b16-96c3-694e3621d9ef"
+                  name="Componente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="21ddbc26-d014-4260-8e0b-e7b88c2592aa"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="64c32c06-c71f-4263-bb79-52f083d5d577"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="f33e9c95-7684-4e43-a01c-f3720e91fabd"
+            name="ObtenerHijos"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="15899a01-7f8d-406e-a931-d4bcbb180b65"
+                  name=") IList&lt;Componente&gt;("
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="37536e36-794c-4486-b55f-e3eece95136a"
+            name="AgregarHijo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d5e99078-5176-4261-9c13-dd7eca5503b7"
+                  name="Componente"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="706e3eda-e312-4f80-a304-80f8e5b7b8f5"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ae042a53-76ad-4e1d-b18b-f7304d824077"
+                      LastKnownName="int"
+                      LastKnownLocation="Mdelado.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="31e99cd3-03f5-4241-b14b-3d01ff46f6c4"
+            name="ObtenerTamaño"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a083e201-f9c2-4c49-b2be-153352d1cf3c"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ae042a53-76ad-4e1d-b18b-f7304d824077"
+                      LastKnownName="int"
+                      LastKnownLocation="Mdelado.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
     name="Integer"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
     name="Boolean"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
     name="String"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
     name="UnlimitedNatural"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
 </modelStoreModel>

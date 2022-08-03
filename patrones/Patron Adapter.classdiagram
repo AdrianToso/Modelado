@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="e0bc6f11-125b-449a-9c35-a8f61f0ea84b" name="Patron Adapter" linkedPackageId="6361defc-c77f-4eac-a03b-ab676c2c74ed" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="d5098cc8-65d2-43f4-a999-bee92b84ebff">
+      <elementDefinition Id="b5d6a86b-5a59-4ee2-9868-925658846a46" />
+      <body>el cliente solo ve la interfaz </body>
+    </comment>
+    <comment Id="5fd6ebf6-e530-409e-87fd-d03974ad4a46">
+      <elementDefinition Id="3399a919-0c9b-4066-a944-597bf9701469" />
+      <body>adaptado.SpecificRequest()</body>
+      <annotatedElements>
+        <classMoniker Id="68799be6-f349-48b0-8b61-2b4512e608dd" LastKnownName="Adaptador" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="88377b59-9c7a-43fa-a5a9-9f436faff233">
+      <profileInstance Id="21448e69-ba5d-48bb-84c1-52bc815f9acd" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="204d3778-0727-4022-a168-61a6a6dbfa72">
+      <profileInstance Id="f82c0636-2eb1-4e04-9d6b-2bd6abfb116e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="b38d93d9-69d3-43ea-9a9d-df143e544133">
+      <profileInstance Id="7c514bfa-ed40-4062-bec1-e17dc86c8d56" name="TextTemplateBindings">
+        <elementDefinition Id="d3f35757-2aed-488c-a230-2543bb94f1b6" />
+      </profileInstance>
+      <elementDefinition Id="1ca4c196-273a-4378-ab93-1f205b763659" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="96008909-af6c-42e4-925c-47936b3a7c19" name="Cliente" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bee07fdf-5e0c-4bbc-918c-791b7f125a24" />
+        <suppliersInternal>
+          <interfaceRealization Id="3ec63967-d984-4861-a834-27c24a960f0e">
+            <interfaceMoniker Id="9ddcb6af-f611-4574-9c9e-980e91687d4e" LastKnownName="Target" />
+            <elementDefinition Id="1e0be569-4f1f-467e-aa7b-6be371804435" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="92427b5c-57ca-4307-8916-fb158d01ab7c" name="Request" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="53aaf738-6cfa-4afd-9f61-0ff76672310e" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="9ddcb6af-f611-4574-9c9e-980e91687d4e" name="Target" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="15825d05-4bf5-40fa-817b-2ed62c242725" />
+        <ownedOperations>
+          <operation Id="13a7a46d-3cb4-4725-ac10-b53fc5a77d65" name="Request" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ca7e91ea-0b12-4338-98fa-4f2aa9e98608" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="68799be6-f349-48b0-8b61-2b4512e608dd" name="Adaptador" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6eb4515d-3536-4f96-9b7e-51fc52de5d73" />
+        <suppliersInternal>
+          <interfaceRealization Id="fd3f3418-b613-40a9-9d34-b234a430a075">
+            <interfaceMoniker Id="9ddcb6af-f611-4574-9c9e-980e91687d4e" LastKnownName="Target" />
+            <elementDefinition Id="70397f95-499c-4f03-8633-aba3ab46db5b" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="fe0c1534-bcb0-4b31-afce-2ebd06a1ad15" isDerived="false" sourceEndRoleName="Adaptador" targetEndRoleName="Adaptado" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d9c4fdb1-a4c8-4b71-b0eb-6b7759186d8d" LastKnownName="Adaptado" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="63090a6a-7d3f-46a1-a174-775b405d0f14" name="Adaptador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="98f0787b-8b1d-49d1-b73e-079021f97393" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="20df4889-0eaf-41ff-9d21-abfcee6da621" name="Adaptado" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1e271774-e750-4b91-a780-22a8164d99fb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e11de83b-be18-4c77-81fc-4f77b2f3e9cf" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="970ee977-8a2a-4696-accd-c601ee47bb08" name="Request" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9cbd8ec0-2dd1-4903-bc82-899d52125f33" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d9c4fdb1-a4c8-4b71-b0eb-6b7759186d8d" name="Adaptado" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d8098061-513d-4bf2-823b-14934ff0728a" />
+        <ownedOperationsInternal>
+          <operation Id="e7c56150-f055-4278-9611-c38eebb30bf2" name="Specific Request" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d718e56d-d269-40a6-b4f1-d5b47e32e091" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="6361defc-c77f-4eac-a03b-ab676c2c74ed" name="Mdelado">
+    <elementDefinition Id="241b612b-d563-423d-87e7-91af74150062" />
+  </package>
+</logicalClassDesignerModel>

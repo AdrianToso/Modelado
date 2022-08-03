@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="d275fe12-ff81-460c-8e41-3d9764707375" name="Arquitectura general" linkedPackageId="322ae301-4626-42ca-aac5-50be6b5bf390" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="7d8919ee-0c3e-432b-81d8-cc6c52c0de12" name="Dominio- Entities" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="268e726d-0b03-45c5-85dc-d5c1d0c3574a" />
+        <suppliersInternal>
+          <dependency Id="7da3afd0-90c3-4b55-83e4-1907d8f3c7b2">
+            <componentMoniker Id="76a61cbd-21e8-49cb-9843-ba37fff6d51c" LastKnownName="Abstrations" />
+            <elementDefinition Id="fc92572e-7234-4ca9-a0dc-4f412308e697" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="7f587689-0097-4662-af52-1ab09612e294" name="Repository" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d0816985-eca7-4dae-a237-2a9330635ac5" />
+        <suppliersInternal>
+          <dependency Id="cb748bad-ebd2-46cb-b978-f3f1bfba0d28">
+            <componentMoniker Id="17632b38-ecba-4653-aa24-ce27ee81aa2c" LastKnownName="DataAccess Contextos de Bases de datos" />
+            <elementDefinition Id="1aa5665a-7115-4f16-bfd7-f8c6b47b0652" />
+          </dependency>
+          <dependency Id="1ac5c62c-22c1-47a3-8558-2b1b69babb82">
+            <componentMoniker Id="7d8919ee-0c3e-432b-81d8-cc6c52c0de12" LastKnownName="Dominio- Entities" />
+            <elementDefinition Id="1ecbeae2-305d-460d-8da8-933935c9f94e" />
+          </dependency>
+          <dependency Id="da70589d-2408-4c5b-b6c8-bfcfcba6fde6">
+            <componentMoniker Id="e029d271-139e-4ad5-9eb6-592b9d94b5c4" LastKnownName="Services" />
+            <elementDefinition Id="a63db551-b796-469b-bffd-34de02a12c9e" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="ca01bb56-eda2-49a9-881e-b2120f964d1d" name="Application" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e7ed199d-8b9b-4bf9-9221-6a3c3939942e" />
+        <suppliersInternal>
+          <dependency Id="19bb4056-25ee-497c-96c6-565863762ac4">
+            <componentMoniker Id="7f587689-0097-4662-af52-1ab09612e294" LastKnownName="Repository" />
+            <elementDefinition Id="e07b3458-5b49-47f7-be97-e11d6f0b8409" />
+          </dependency>
+          <dependency Id="def2cdce-d481-4368-9a1a-a7db1ecd44b3">
+            <componentMoniker Id="7d8919ee-0c3e-432b-81d8-cc6c52c0de12" LastKnownName="Dominio- Entities" />
+            <elementDefinition Id="a10d54c0-84fd-40e4-8cc3-e156b5545e0d" />
+          </dependency>
+          <dependency Id="562268f3-e721-4568-b2c5-ea71454ede56">
+            <componentMoniker Id="e029d271-139e-4ad5-9eb6-592b9d94b5c4" LastKnownName="Services" />
+            <elementDefinition Id="f58e233a-fe1e-4cbc-a534-0be37316adcb" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="17632b38-ecba-4653-aa24-ce27ee81aa2c" name="DataAccess Contextos de Bases de datos" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fc8f5a17-f250-4ef0-8885-e69160daeb0d" />
+        <suppliersInternal>
+          <dependency Id="ba4c58da-bdb7-41d2-be3f-ad2c2739790f">
+            <componentMoniker Id="7d8919ee-0c3e-432b-81d8-cc6c52c0de12" LastKnownName="Dominio- Entities" />
+            <elementDefinition Id="9d8f1b7f-505b-40be-866d-6e16f6d99e4e" />
+          </dependency>
+          <dependency Id="53b1283f-a8e1-4e36-aec8-6071b84ee6cf">
+            <componentMoniker Id="e029d271-139e-4ad5-9eb6-592b9d94b5c4" LastKnownName="Services" />
+            <elementDefinition Id="3be1b30b-fcd8-4017-9a74-c35cc46b13d9" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="e029d271-139e-4ad5-9eb6-592b9d94b5c4" name="Services" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2a0ca4f7-674c-4619-8559-965f7456794d" />
+        <suppliersInternal>
+          <dependency Id="3b0cf5e8-e657-4573-82a9-5d87d1138db2">
+            <componentMoniker Id="76a61cbd-21e8-49cb-9843-ba37fff6d51c" LastKnownName="Abstrations" />
+            <elementDefinition Id="e52c7486-97b8-4a2b-9977-58dda5d0a7b5" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="76a61cbd-21e8-49cb-9843-ba37fff6d51c" name="Abstrations" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2624b7f2-b5d8-4af7-b587-1672eeb71e09" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="ee413f32-2a98-408d-8cf7-ea916aae39e7" name="Interfaz de usuario UI" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8ccc6b2f-ceb1-4973-8aa1-1ead53f90279" />
+        <suppliersInternal>
+          <dependency Id="3c44a750-16c1-4711-8e09-a8887a803b0b">
+            <componentMoniker Id="ca01bb56-eda2-49a9-881e-b2120f964d1d" LastKnownName="Application" />
+            <elementDefinition Id="bc2a218f-4810-4dac-bbf5-b2db544aab1e" />
+          </dependency>
+          <dependency Id="d926a7b2-4cc5-4e34-a044-07c273c93923">
+            <componentMoniker Id="7d8919ee-0c3e-432b-81d8-cc6c52c0de12" LastKnownName="Dominio- Entities" />
+            <elementDefinition Id="3393a323-258f-46ce-a8b9-4840f5bd3b88" />
+          </dependency>
+          <dependency Id="30fb8d2a-ec7e-4414-9f6f-76339b4f3aab">
+            <componentMoniker Id="e029d271-139e-4ad5-9eb6-592b9d94b5c4" LastKnownName="Services" />
+            <elementDefinition Id="6572fc02-2cb6-440d-8720-429035424226" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="322ae301-4626-42ca-aac5-50be6b5bf390" name="Mdelado">
+    <elementDefinition Id="241b612b-d563-423d-87e7-91af74150062" />
+    <profileInstances>
+      <packageHasProfileInstances Id="85bcda57-d78b-415d-a224-8ba62782b0b9">
+        <profileInstance Id="46c5cf8f-f6c8-424c-bcb0-140973811995" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="408e34fa-7d18-43ad-bbc8-c1064beb4301">
+        <profileInstance Id="de68b784-9e12-43b0-8674-fcfe51e07092" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="0ea77581-f9e2-470d-9fe4-e686dbf84b38">
+        <profileInstance Id="1962fa7d-5e4d-4b50-bad7-fce0a086cad8" name="TextTemplateBindings">
+          <elementDefinition Id="d3f35757-2aed-488c-a230-2543bb94f1b6" />
+        </profileInstance>
+        <elementDefinition Id="1ca4c196-273a-4378-ab93-1f205b763659" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</componentModel>

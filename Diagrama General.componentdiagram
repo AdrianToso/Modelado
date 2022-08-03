@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="8d8aa5d1-a449-44cc-bbd4-6add4c8052fa" name="Diagrama General" linkedPackageId="18a59e50-6670-4bc8-ac9c-050e73644ea4" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="422b7b56-97fd-49cf-8bb8-41499af9ae0d">
+      <profileInstance Id="b4257dec-9b75-41c8-a00f-f3f2a66ef52d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="70cee286-1451-4f7c-a866-1c20edcebbd7">
+      <profileInstance Id="5aede2c4-81ab-434c-91e6-dc66a5dcf05f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="e9b4f59c-f760-461b-ad89-5af5f31ad8db" name="Blazor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b7bfb97a-cc1e-4cad-bed8-c754c9c8fa8c" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="2202084c-4b9f-471c-9fbf-392d05e71d49" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="622be503-4e68-49f7-95ba-876855bb11e3" />
+            <suppliersInternal>
+              <dependency Id="851bef01-8ad5-40b4-9878-326a65c78cf9">
+                <providedInterfaceMoniker Id="65de409b-bfb7-4283-9377-4ba2efdfe021" LastKnownName="Port2" />
+                <elementDefinition Id="312a0c30-dc4b-4069-8199-c96aa25f739c" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="830a6062-4a63-4cf8-bb31-797b9b5846cc" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="566270c8-f0d4-4f69-890a-cd0aa9ae07e7" name="Servicio MVC .NET Core" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0eb91b91-6b62-4513-a6af-d4c1fae287c3" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="dcf3a7b2-a7d5-4151-aa08-509f79d3f805" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="cacf13cf-a211-477b-91c4-b935aacd6633" />
+            <suppliersInternal>
+              <dependency Id="1e570e74-8c59-4ea0-b143-496711e7b623">
+                <providedInterfaceMoniker Id="9be18688-52bd-490a-94bd-edc22b91d91f" LastKnownName="Port1" />
+                <elementDefinition Id="d34d304e-c943-4f89-9cc3-0314785e1fbb" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="a4d8509e-24f7-49c6-8606-28905868a7cd" />
+            </type_NamedElement>
+          </requiredInterface>
+          <providedInterface Id="65de409b-bfb7-4283-9377-4ba2efdfe021" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="d773ae1f-63c0-4744-affd-576bc42655aa" />
+            <type_NamedElement>
+              <interfaceMoniker Id="b5d02c8f-3fc7-4d24-b837-1c3ba09c8aa2" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="8805e59e-dd3c-4584-a109-f8e13661e4b5" name="DB SqlServer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dc3abc12-35fa-4869-8767-8e6fcfe7ee54" />
+        <ownedAttributesInternal>
+          <providedInterface Id="9be18688-52bd-490a-94bd-edc22b91d91f" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="ae567066-dc1c-45d2-962f-849fa4da8f29" />
+            <type_NamedElement>
+              <interfaceMoniker Id="854b649e-5bd5-4823-8d6a-6ca8a07cd3bb" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="a4d8509e-24f7-49c6-8606-28905868a7cd" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="23d776a1-0498-4dfb-94fe-ebaa8307ccbf" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="854b649e-5bd5-4823-8d6a-6ca8a07cd3bb" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c0f2607f-cd00-4616-ad68-c2c50eadc5ac" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="b5d02c8f-3fc7-4d24-b837-1c3ba09c8aa2" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e3df86a4-4ba1-412f-bbe6-68640727ac47" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="830a6062-4a63-4cf8-bb31-797b9b5846cc" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="73dc9395-3798-4086-8354-97baabe235c1" />
+      </Interface>
+    </modelContainsNamedElements>
+  </packagedElements>
+  <package Id="18a59e50-6670-4bc8-ac9c-050e73644ea4" name="Mdelado">
+    <elementDefinition Id="241b612b-d563-423d-87e7-91af74150062" />
+    <profileInstances>
+      <packageHasProfileInstances Id="e004b717-b98f-485d-bdc2-84ebdaba86a6">
+        <profileInstance Id="9fe0dca8-458b-44ec-80f0-9ae0811c641f" name="TextTemplateBindings">
+          <elementDefinition Id="d3f35757-2aed-488c-a230-2543bb94f1b6" />
+        </profileInstance>
+        <elementDefinition Id="1ca4c196-273a-4378-ab93-1f205b763659" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</componentModel>
